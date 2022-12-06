@@ -82,6 +82,7 @@ export class ViewEmployeesComponent implements OnInit {
   }
 
   reassign() {
+    this.currentEmployees = [];
     for (let item of this.currentAllEmployees) {
       if (item.userRole == "employee")
         this.currentEmployees.push(item)
